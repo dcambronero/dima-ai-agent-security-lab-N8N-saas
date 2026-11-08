@@ -1,0 +1,48 @@
+DIMA AI COMPANY
+Estrategia de Proveedores y Tecnología
+
+Clasificación: Interno
+Control Documental: CAMBRON-AI-2026-005
+
+Proveedores Estratégicos
+
+Cloud
+
+- Microsoft Azure
+- Amazon Web Services
+
+Tecnologías de IA
+
+- OpenAI
+- Modelos Fundacionales Empresariales
+
+Plataformas de Desarrollo
+
+- GitHub
+- Docker
+- Kubernetes
+
+Objetivos Tecnológicos
+
+1. Estandarizar el uso de contenedores.
+
+2. Automatizar despliegues.
+
+3. Mejorar capacidades de observabilidad.
+
+4. Fortalecer procesos de DevSecOps.
+
+5. Incrementar seguridad en aplicaciones con agentes de IA.
+
+Consideraciones de Compra
+
+Toda nueva tecnología deberá ser evaluada por:
+
+- Equipo de Arquitectura
+- Equipo de Seguridad
+- Equipo de Operaciones
+
+Referencia Interna
+
+CAMBRON-LABS-TECH-2026
+``

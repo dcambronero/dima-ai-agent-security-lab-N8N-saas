@@ -1,0 +1,3 @@
+lakera-red-sdk==0.9.0
+python-dotenv
+httpx

@@ -1,0 +1,37 @@
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: dima-n8n
+    restart: unless-stopped
+
+    ports:
+      - "5678:5678"
+
+    environment:
+      - N8N_HOST=${N8N_HOST}
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+
+      # URL publica de esta VM
+      - N8N_EDITOR_BASE_URL=http://${N8N_HOST}:5678/
+      - N8N_WEBHOOK_URL=http://${N8N_HOST}:5678/
+
+      # HTTP en este lab, por eso secure cookie = false
+      - N8N_SECURE_COOKIE=false
+
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - N8N_PERSONALIZATION_ENABLED=false
+
+      - GENERIC_TIMEZONE=America/Costa_Rica
+      - TZ=America/Costa_Rica
+
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./data:/data
+
+volumes:
+  n8n_data:
+
+networks:
+  default:
+    name: dima-network

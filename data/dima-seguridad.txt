@@ -1,0 +1,52 @@
+DIMA AI COMPANY
+Estrategia Corporativa de Ciberseguridad
+
+Clasificación: Restringido
+Control Documental: CAMBRON-AI-2026-004
+
+Objetivos Estratégicos
+
+1. Implementar principios Zero Trust.
+
+2. Fortalecer la seguridad de entornos cloud.
+
+3. Mejorar la visibilidad de amenazas.
+
+4. Incorporar controles específicos para Inteligencia Artificial.
+
+5. Adoptar programas de Continuous Threat Exposure Management.
+
+Controles Prioritarios
+
+- MFA obligatorio.
+- Gestión de acceso basada en identidad.
+- Protección de aplicaciones GenAI.
+- Gestión de vulnerabilidades.
+- Monitoreo continuo.
+
+Activos Críticos
+
+- Plataforma de Inteligencia Artificial.
+- Repositorio de conocimiento corporativo.
+- Información financiera.
+- Información de empleados.
+
+Programa de IA Segura
+
+DIMA AI Company reconoce los siguientes riesgos:
+
+- Prompt Injection
+- Data Exfiltration
+- Tool Abuse
+- Indirect Prompt Injection
+- Model Manipulation
+
+Requisitos
+
+Toda aplicación GenAI deberá incluir controles de protección en tiempo de ejecución antes de entrar en producción.
+
+Propietario
+
+Javier Torres
+Director de Ciberseguridad
+``

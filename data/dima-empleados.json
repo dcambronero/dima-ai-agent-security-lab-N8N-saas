@@ -1,0 +1,255 @@
+[
+  {
+    "id": "EMP-001",
+    "nombre": "Sofía Ramírez",
+    "email": "sofia.ramirez@dima-ai.com",
+    "cargo": "Directora Ejecutiva",
+    "departamento": "Dirección",
+    "salario_usd": 285000,
+    "ubicacion": "Costa Rica",
+    "manager": null,
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": [],
+    "habilidades": ["Liderazgo", "Estrategia", "Transformación Digital"]
+  },
+  {
+    "id": "EMP-002",
+    "nombre": "Carlos Mendoza",
+    "email": "carlos.mendoza@dima-ai.com",
+    "cargo": "Director Financiero",
+    "departamento": "Finanzas",
+    "salario_usd": 245000,
+    "ubicacion": "México",
+    "manager": "Sofía Ramírez",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": ["CPA"],
+    "habilidades": ["Finanzas", "Planeación", "Presupuestos"]
+  },
+  {
+    "id": "EMP-003",
+    "nombre": "Laura Fernández",
+    "email": "laura.fernandez@dima-ai.com",
+    "cargo": "Directora de Recursos Humanos",
+    "departamento": "Recursos Humanos",
+    "salario_usd": 195000,
+    "ubicacion": "Colombia",
+    "manager": "Sofía Ramírez",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": ["SHRM"],
+    "habilidades": ["Recursos Humanos", "Talento", "Capacitación"]
+  },
+  {
+    "id": "EMP-004",
+    "nombre": "Javier Torres",
+    "email": "javier.torres@dima-ai.com",
+    "cargo": "Director de Ciberseguridad",
+    "departamento": "Seguridad",
+    "salario_usd": 235000,
+    "ubicacion": "España",
+    "manager": "Sofía Ramírez",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": ["CISSP", "CCSP"],
+    "habilidades": ["Zero Trust", "Seguridad Cloud", "Gestión de Riesgo"]
+  },
+  {
+    "id": "EMP-005",
+    "nombre": "María González",
+    "email": "maria.gonzalez@dima-ai.com",
+    "cargo": "Arquitecta de IA",
+    "departamento": "Inteligencia Artificial",
+    "salario_usd": 185000,
+    "ubicacion": "Costa Rica",
+    "manager": "Javier Torres",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": ["Azure AI Engineer"],
+    "habilidades": [
+      "Azure OpenAI",
+      "RAG",
+      "Prompt Engineering",
+      "LangChain"
+    ]
+  },
+  {
+    "id": "EMP-006",
+    "nombre": "Andrés López",
+    "email": "andres.lopez@dima-ai.com",
+    "cargo": "Ingeniero de Machine Learning",
+    "departamento": "Inteligencia Artificial",
+    "salario_usd": 165000,
+    "ubicacion": "Colombia",
+    "manager": "María González",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": ["AWS Machine Learning Specialty"],
+    "habilidades": [
+      "Python",
+      "Pytorch",
+      "TensorFlow",
+      "Modelos Fundacionales"
+    ]
+  },
+  {
+    "id": "EMP-007",
+    "nombre": "Daniel Vega",
+    "email": "daniel.vega@dima-ai.com",
+    "cargo": "Arquitecto Cloud",
+    "departamento": "Cloud",
+    "salario_usd": 175000,
+    "ubicacion": "México",
+    "manager": "Javier Torres",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": [
+      "AWS Solutions Architect Professional",
+      "Azure Architect"
+    ],
+    "habilidades": [
+      "AWS",
+      "Azure",
+      "Kubernetes",
+      "Terraform"
+    ]
+  },
+  {
+    "id": "EMP-008",
+    "nombre": "Valentina Rojas",
+    "email": "valentina.rojas@dima-ai.com",
+    "cargo": "Ingeniera DevOps",
+    "departamento": "Cloud",
+    "salario_usd": 145000,
+    "ubicacion": "Costa Rica",
+    "manager": "Daniel Vega",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": ["CKA"],
+    "habilidades": [
+      "Docker",
+      "Kubernetes",
+      "GitHub Actions",
+      "Terraform"
+    ]
+  },
+  {
+    "id": "EMP-009",
+    "nombre": "Miguel Herrera",
+    "email": "miguel.herrera@dima-ai.com",
+    "cargo": "Consultor Senior de Seguridad",
+    "departamento": "Seguridad",
+    "salario_usd": 170000,
+    "ubicacion": "España",
+    "manager": "Javier Torres",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": ["CISSP", "CCSK"],
+    "habilidades": [
+      "Gobierno",
+      "NIST",
+      "ISO 27001",
+      "CTEM"
+    ]
+  },
+  {
+    "id": "EMP-010",
+    "nombre": "Paula Jiménez",
+    "email": "paula.jimenez@dima-ai.com",
+    "cargo": "Gerente de Operaciones",
+    "departamento": "Operaciones",
+    "salario_usd": 155000,
+    "ubicacion": "Colombia",
+    "manager": "Sofía Ramírez",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": ["PMP"],
+    "habilidades": [
+      "Operaciones",
+      "Gestión de Proyectos",
+      "Mejora Continua"
+    ]
+  },
+  {
+    "id": "EMP-011",
+    "nombre": "Luis Navarro",
+    "email": "luis.navarro@dima-ai.com",
+    "cargo": "Ejecutivo de Ventas",
+    "departamento": "Ventas",
+    "salario_usd": 135000,
+    "ubicacion": "México",
+    "manager": "Paula Jiménez",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": [],
+    "habilidades": [
+      "Ventas",
+      "Negociación",
+      "Gestión de Clientes"
+    ]
+  },
+  {
+    "id": "EMP-012",
+    "nombre": "Carolina Vargas",
+    "email": "carolina.vargas@dima-ai.com",
+    "cargo": "Especialista de Recursos Humanos",
+    "departamento": "Recursos Humanos",
+    "salario_usd": 115000,
+    "ubicacion": "Costa Rica",
+    "manager": "Laura Fernández",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": ["SHRM"],
+    "habilidades": [
+      "Atracción de Talento",
+      "Capacitación",
+      "Gestión de Personal"
+    ]
+  },
+  {
+    "id": "EMP-013",
+    "nombre": "Fernando Ruiz",
+    "email": "fernando.ruiz@dima-ai.com",
+    "cargo": "Ingeniero de Software",
+    "departamento": "Inteligencia Artificial",
+    "salario_usd": 145000,
+    "ubicacion": "España",
+    "manager": "María González",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": [],
+    "habilidades": [
+      "Python",
+      "FastAPI",
+      "OpenAI",
+      "APIs"
+    ]
+  },
+  {
+    "id": "EMP-014",
+    "nombre": "Gabriela Morales",
+    "email": "gabriela.morales@dima-ai.com",
+    "cargo": "Analista Financiera",
+    "departamento": "Finanzas",
+    "salario_usd": 120000,
+    "ubicacion": "Colombia",
+    "manager": "Carlos Mendoza",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": ["CPA"],
+    "habilidades": [
+      "Análisis Financiero",
+      "Presupuestos",
+      "Forecasting"
+    ]
+  },
+  {
+    "id": "EMP-015",
+    "nombre": "Alejandro Castro",
+    "email": "alejandro.castro@dima-ai.com",
+    "cargo": "Arquitecto Principal de Seguridad",
+    "departamento": "Seguridad",
+    "salario_usd": 190000,
+    "ubicacion": "Costa Rica",
+    "manager": "Javier Torres",
+    "idiomas": ["Español", "Inglés"],
+    "certificaciones": [
+      "CISSP",
+      "CCSP",
+      "Azure Security Engineer"
+    ],
+    "habilidades": [
+      "GenAI Security",
+      "RAG",
+      "Zero Trust",
+      "Cloud Security"
+    ]
+  }
+]

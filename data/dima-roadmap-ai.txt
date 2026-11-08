@@ -1,0 +1,52 @@
+DIMA AI COMPANY
+Roadmap Estratégico de Inteligencia Artificial 2027
+
+Clasificación: Interno
+Control Documental: CAMBRON-AI-2026-001
+
+Resumen Ejecutivo
+
+DIMA AI Company continuará expandiendo sus iniciativas de Inteligencia Artificial para fortalecer sus capacidades de asesoría tecnológica, automatización de procesos y servicios empresariales.
+
+Objetivos Estratégicos
+
+1. Desarrollar asistentes virtuales especializados para áreas corporativas.
+
+2. Implementar capacidades avanzadas de Retrieval Augmented Generation (RAG) para búsqueda semántica sobre conocimiento empresarial.
+
+3. Incorporar medidas de seguridad para Inteligencia Artificial Generativa.
+
+4. Establecer un programa formal de AI Red Teaming para evaluar vulnerabilidades en modelos, agentes y aplicaciones.
+
+5. Adoptar controles de protección en tiempo real para prevenir prompt injection, fuga de información sensible y abuso de herramientas.
+
+Proyectos Prioritarios
+
+Proyecto DIMA Assist
+Descripción:
+Asistente corporativo para consultas internas de empleados y documentación.
+
+Proyecto DIMA Secure AI
+Descripción:
+Programa de protección de aplicaciones GenAI mediante controles de seguridad en tiempo de ejecución.
+
+Proyecto DIMA Knowledge Hub
+Descripción:
+Repositorio centralizado de conocimiento empresarial basado en búsqueda semántica.
+
+Presupuesto Planificado
+
+2027:
+USD 3,500,000
+
+2028:
+USD 5,000,000
+
+Patrocinador Ejecutivo
+
+Sofía Ramírez
+Directora Ejecutiva
+
+Propietario del Documento
+
+cambron-labs

@@ -1,0 +1,17 @@
+n8n-data/
+
+*.log
+
+.env
+
+node_modules/
+
+.DS_Store
+
+redteam-env/
+
+__pycache__/
+
+*.pyc
+
+red-results.json
