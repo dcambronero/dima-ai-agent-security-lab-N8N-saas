@@ -115,6 +115,88 @@
       ],
       "id": "30a719de-8e32-41a7-8034-8462d43a70f8",
       "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "content": "## Adapter para AI Red Teaming (SaaS)\nEndpoint para el target de Red:  http://<PUBLIC_IP>:5678/webhook/red-adapter\n\nTraduce el contrato de Red ({message, sessionId}) al Chat Trigger de abajo, crea el sessionId en el primer turno y devuelve {message, sessionId}.\nNo modificar. Llama al Chat Trigger por su URL local, asi el scan pasa por AI Agent Security cuando se active.",
+        "height": 300,
+        "width": 1000,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -48,
+        -464
+      ],
+      "id": "5d1c7a10-6b1e-4c1a-9a51-2f6b8e0c0a01",
+      "name": "Nota Adapter Red Team"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "red-adapter",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        -320
+      ],
+      "id": "5d1c7a10-6b1e-4c1a-9a51-2f6b8e0c0a02",
+      "name": "Red Webhook",
+      "webhookId": "7c3a9f52-1d4e-4b8a-8f26-9a0b3c5d7e11"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.first().json.body || {};\nconst sessionId = body.sessionId || ('red-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10));\nreturn [{ json: { message: String(body.message ?? ''), sessionId } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        224,
+        -320
+      ],
+      "id": "5d1c7a10-6b1e-4c1a-9a51-2f6b8e0c0a03",
+      "name": "Session"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:5678/webhook/bf0ea31d-68b2-4e0d-b9b7-b27c4f980e62/chat",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ action: 'sendMessage', sessionId: $json.sessionId, chatInput: $json.message }) }}",
+        "options": {
+          "timeout": 180000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        448,
+        -320
+      ],
+      "id": "5d1c7a10-6b1e-4c1a-9a51-2f6b8e0c0a04",
+      "name": "Call Chat",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { message: $json.output || $json.message || ('[adapter error] ' + JSON.stringify($json.error || $json)), sessionId: $('Session').item.json.sessionId } }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        672,
+        -320
+      ],
+      "id": "5d1c7a10-6b1e-4c1a-9a51-2f6b8e0c0a05",
+      "name": "Respond to Red"
     }
   ],
   "pinData": {},
@@ -180,6 +262,39 @@
           {
             "node": "AI Agent",
             "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Red Webhook": {
+      "main": [
+        [
+          {
+            "node": "Session",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Session": {
+      "main": [
+        [
+          {
+            "node": "Call Chat",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call Chat": {
+      "main": [
+        [
+          {
+            "node": "Respond to Red",
+            "type": "main",
             "index": 0
           }
         ]
